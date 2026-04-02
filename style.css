@@ -487,26 +487,27 @@ ul {
     z-index: 2;
 }
 
-/* Nova Logo na Seção */
+/* Nova Logo na Seção - Aumentada em 15% (130px -> 150px) */
 .learning-logo {
-    max-width: 130px;
+    max-width: 150px;
     height: auto;
     display: block;
-    margin-bottom: 25px; /* Alinhada com o texto abaixo */
-    opacity: 0.9;
+    margin-bottom: 30px; 
+    opacity: 1;
     filter: drop-shadow(0 4px 10px rgba(0,0,0,0.3));
 }
 
 .learning-section .divider {
     background-color: var(--color-accent-terracota);
-    width: 80px; /* Divider um pouco mais imponente */
+    width: 60px;
+    margin-left: 0;
 }
 
 .learning-section h2 {
-    font-size: 2.85rem; /* Ajuste para elegância */
-    line-height: 1.15;
+    font-size: 2.85rem;
+    line-height: 1.2;
     color: var(--color-text-light);
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     letter-spacing: -0.5px;
 }
 
@@ -514,41 +515,51 @@ ul {
     margin: 50px 0;
     list-style: none;
     padding: 0;
-    perspective: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Separação clara entre os blocos */
 }
 
 .learning-list li {
-    font-size: 1.35rem; /* Aumentado para preencher o enquadramento */
+    font-size: 1.3rem;
     color: var(--color-text-light);
-    margin-bottom: 30px; /* Mais respiro entre itens */
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 20px;
-    font-weight: 500; /* Mudado de 700 para 500 para elegância moderna, mas nítida */
-    line-height: 1.45;
-    text-rendering: optimizeLegibility;
+    font-weight: 500;
+    line-height: 1.4;
+    padding: 22px 28px;
+    background: rgba(255, 255, 255, 0.03); /* Fundo sutil para separar as frases */
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-left: 4px solid var(--color-accent-terracota); /* Detalhe premium lateral */
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.learning-list li:hover {
+    background: rgba(255, 255, 255, 0.06);
+    transform: translateX(5px);
+    border-color: rgba(255, 255, 255, 0.1);
 }
 
 .learning-list i {
     color: var(--color-accent-terracota);
-    font-size: 1.8rem;
-    margin-top: 1px;
+    font-size: 1.6rem;
+    flex-shrink: 0;
 }
 
 .learning-list strong {
-    color: #f1b38e; /* Tom de terracota nítido e elegante */
+    color: #f1b38e;
     font-weight: 700;
 }
 
 .learning-disclaimer {
     background-color: #FFFFFF;
-    padding: 45px 55px; /* Aumentado o enquadramento interno */
+    padding: 40px 50px;
     border-radius: 20px;
     border-left: 10px solid var(--color-accent-terracota);
-    box-shadow: 
-        0 30px 60px rgba(0, 0, 0, 0.4),
-        0 10px 20px rgba(0, 0, 0, 0.2);
-    margin-top: 50px;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+    margin-top: 40px;
     opacity: 0;
     transform: translateY(40px);
     transition: transform 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 1s ease;
@@ -1097,26 +1108,30 @@ ul {
     .learning-section { padding-bottom: 50px; }
     
     .learning-logo {
-        max-width: 100px;
-        margin: 0 auto 20px;
+        max-width: 115px; /* Aumentada em 15% (100px -> 115px) */
+        margin: 0 auto 25px;
         display: block;
     }
 
     .learning-section h2 { 
         font-size: 1.85rem; 
         text-align: center; 
-        line-height: 1.2;
-        margin-bottom: 12px;
+        line-height: 1.25;
+        margin-bottom: 20px;
     }
-    .learning-section .divider { margin: 0 auto 25px; } /* Centraliza o divisor */
+    .learning-section .divider { margin: 0 auto 30px; } 
 
-    .learning-list { margin: 30px 0; }
+    .learning-list { 
+        margin: 30px 0; 
+        gap: 12px;
+    }
     
     .learning-list li { 
-        font-size: 1.15rem; 
-        gap: 15px; 
-        margin-bottom: 22px; 
-        font-weight: 500; /* Elegância moderna */
+        font-size: 1.05rem; 
+        gap: 12px; 
+        margin-bottom: 0; /* Espaço agora controlado pelo gap do container parent */
+        padding: 16px 18px;
+        font-weight: 600; 
         transform: none !important;
         opacity: 1 !important;
         line-height: 1.4;
