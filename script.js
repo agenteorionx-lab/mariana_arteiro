@@ -34,14 +34,41 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // ==========================================
-    // 3. Signature Animation (Optional delay)
+    // 4. Global Premium Smooth Scroll (40% Slower)
     // ==========================================
-    const signature = document.querySelector('.signature-container');
-    if (signature) {
-        signature.style.opacity = '0';
-        signature.style.transition = 'opacity 2s ease 1s';
-        setTimeout(() => {
-            signature.style.opacity = '1';
-        }, 500);
-    }
+    const smoothScroll = (target, duration) => {
+        const targetElement = document.querySelector(target);
+        if (!targetElement) return;
+
+        const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+        const startPosition = window.pageYOffset;
+        const distance = targetPosition - startPosition;
+        let start = null;
+
+        const step = (timestamp) => {
+            if (!start) start = timestamp;
+            const progress = timestamp - start;
+            const time = Math.min(progress / duration, 1);
+            
+            /* Easing function: easeInOutCubic para maior fluidez */
+            const ease = time < 0.5 ? 4 * time * time * time : 1 - Math.pow(-2 * time + 2, 3) / 2;
+            
+            window.scrollTo(0, startPosition + distance * ease);
+            if (progress < duration) {
+                window.requestAnimationFrame(step);
+            }
+        };
+        window.requestAnimationFrame(step);
+    };
+
+    // Aplica o scroll para todos os links internos
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const targetId = this.getAttribute('href');
+            if (targetId !== '#' && targetId.length > 1) {
+                e.preventDefault();
+                smoothScroll(targetId, 1800); /* 1.8 segundos para ser bem visível e premium */
+            }
+        });
+    });
 });
