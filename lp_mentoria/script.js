@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    document.body.classList.add('js-enabled');
     // 1. SCROLL REVEAL ANIMATION
     const revealElements = document.querySelectorAll('.reveal');
 

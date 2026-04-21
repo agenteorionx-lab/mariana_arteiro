@@ -2429,13 +2429,14 @@ body {
     /* ==========================================================================
    ANIMATIONS
    ========================================================================== */
-    .reveal {
+    /* Reveal fallback: Only hide if JS is enabled */
+    body.js-enabled .reveal {
         opacity: 0;
         transform: translateY(30px);
         transition: all 0.8s ease-out;
     }
 
-    .reveal.active {
+    body.js-enabled .reveal.active {
         opacity: 1;
         transform: translateY(0);
     }
