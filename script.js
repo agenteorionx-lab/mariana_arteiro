@@ -1,22 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
     document.body.classList.add('js-enabled');
-    // 1. SCROLL REVEAL ANIMATION
+    // 1. SCROLL REVEAL ANIMATION (DISABLED FOR STABILITY)
+    /*
     const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
-
-    const revealOnScroll = () => {
-        const windowHeight = window.innerHeight;
-        const elementVisible = 80; // Ponto de ativação levemente antecipado para fluidez
-
-        revealElements.forEach((el) => {
-            const elementTop = el.getBoundingClientRect().top;
-            if (elementTop < windowHeight - elementVisible) {
-                el.classList.add('active');
-            }
-        });
-    };
-
+    const revealOnScroll = () => { ... };
     window.addEventListener('scroll', revealOnScroll);
-    revealOnScroll(); // Trigger on load
+    revealOnScroll();
+    */
 
     // 2. DYNAMIC SPEAKERS LIST (MOVED TO STATIC HTML FOR STABILITY)
 

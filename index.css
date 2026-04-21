@@ -2429,22 +2429,14 @@ body {
     /* ==========================================================================
    ANIMATIONS
    ========================================================================== */
-    /* Reveal fallback: Only hide if JS is enabled */
-    body.js-enabled .reveal,
-    body.js-enabled .reveal-left,
-    body.js-enabled .reveal-right,
-    body.js-enabled .reveal-scale {
-        opacity: 0;
-        transform: translateY(20px);
-        transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-    }
-
-    body.js-enabled .reveal.active,
-    body.js-enabled .reveal-left.active,
-    body.js-enabled .reveal-right.active,
-    body.js-enabled .reveal-scale.active {
-        opacity: 1;
-        transform: translate(0) scale(1);
+    /* Reveal Disabled: Everything visible by default */
+    .reveal,
+    .reveal-left,
+    .reveal-right,
+    .reveal-scale {
+        opacity: 1 !important;
+        transform: none !important;
+        visibility: visible !important;
     }
 
     /* Staggered Child Reveal */

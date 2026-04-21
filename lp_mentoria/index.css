@@ -2429,17 +2429,23 @@ body {
     /* ==========================================================================
    ANIMATIONS
    ========================================================================== */
-    /* Reveal fallback: Only hide if JS is enabled */
-    body.js-enabled .reveal {
-        opacity: 0;
-        transform: translateY(30px);
-        transition: all 0.8s ease-out;
+    /* Reveal Disabled: Everything visible by default */
+    .reveal,
+    .reveal-left,
+    .reveal-right,
+    .reveal-scale {
+        opacity: 1 !important;
+        transform: none !important;
+        visibility: visible !important;
     }
 
-    body.js-enabled .reveal.active {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    /* Staggered Child Reveal */
+    .reveal > *:nth-child(1) { transition-delay: 0.1s; }
+    .reveal > *:nth-child(2) { transition-delay: 0.2s; }
+    .reveal > *:nth-child(3) { transition-delay: 0.3s; }
+    .reveal > *:nth-child(4) { transition-delay: 0.4s; }
+    .reveal > *:nth-child(5) { transition-delay: 0.5s; }
+    .reveal > *:nth-child(6) { transition-delay: 0.6s; }
 
     .checkout-card-logo {
         height: 102px; /* Aumentado em 20% (85px -> 102px) */
