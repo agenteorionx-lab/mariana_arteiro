@@ -11,26 +11,27 @@ document.addEventListener('DOMContentLoaded', () => {
     // 2. DYNAMIC SPEAKERS LIST (MOVED TO STATIC HTML FOR STABILITY)
 
 
-    // 3. INITIALIZE SWIPER CAROUSEL (Otimizado para Mobile vs Desktop)
+    // 3. INITIALIZE SWIPER CAROUSEL (Ultra-Otimizado para Estabilidade Mobile)
     const isMobile = window.innerWidth < 992;
 
     const swiperOptions = {
         slidesPerView: 1,
         spaceBetween: 20,
-        loop: !isMobile, // Desativa loop infinito no mobile para economizar DOM/Memória
-        speed: isMobile ? 600 : 8000, /* Velocidade normal no mobile, ticker no desktop */
-        allowTouchMove: true,
-        autoplay: isMobile ? {
-            delay: 3000,
-            disableOnInteraction: false,
-        } : {
-            delay: 0,
-            disableOnInteraction: false,
-            pauseOnMouseEnter: true,
+        loop: false, // Desativa loop para economizar memória e evitar crash no mobile
+        grabCursor: true,
+        lazy: {
+            loadPrevNext: true,
+            loadPrevNextAmount: 2
+        },
+        speed: 600, 
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: true,
         },
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
+            dynamicBullets: true // Ajuda na performance com muitos slides
         },
         navigation: {
             nextEl: '.swiper-button-next',
@@ -38,27 +39,25 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         breakpoints: {
             640: { slidesPerView: 2, spaceBetween: 20 },
-            992: { slidesPerView: 3, spaceBetween: 30 },
-            1200: { slidesPerView: 4, spaceBetween: 30 }
+            992: { 
+                slidesPerView: 3, 
+                spaceBetween: 30,
+                loop: true, // Reativa loop apenas no desktop se necessário
+                speed: 8000,
+                autoplay: {
+                    delay: 0,
+                    disableOnInteraction: false
+                }
+            },
+            1200: { slidesPerView: 4, spaceBetween: 30, loop: true, speed: 8000, autoplay: { delay: 0 } }
         }
     };
 
     if (typeof Swiper !== 'undefined' && document.querySelector('.specialistsSlider')) {
         try {
             const swiper = new Swiper('.specialistsSlider', swiperOptions);
-
-            // Pausa adicional para dispositivos de toque
-            const sliderEl = document.querySelector('.specialistsSlider');
-            if (sliderEl) {
-                sliderEl.addEventListener('touchstart', () => {
-                    if (swiper.autoplay) swiper.autoplay.stop();
-                });
-                sliderEl.addEventListener('touchend', () => {
-                    if (swiper.autoplay) swiper.autoplay.start();
-                });
-            }
         } catch (e) {
-            console.error("Erro ao inicializar Swiper:", e);
+            console.error("Erro Swiper:", e);
         }
     }
 
