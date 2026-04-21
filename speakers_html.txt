@@ -1,0 +1,287 @@
+
+                            <div class="swiper-slide" data-name="Adriana Pacheco">
+                                <div class="speaker-card">
+                                    <span class="bonus-tag">BÔNUS</span>
+                                    <img src="assets/palestrantes/adriana-pacheco.webp" alt="Adriana Pacheco" class="speaker-img" loading="lazy">
+                                    <div class="speaker-info">
+                                        <h4 class="speaker-name">Adriana Pacheco</h4>
+                                        <p class="speaker-theme">Estruturas internacionais de PPS: joint tenancy with rights of survivorship</p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-name="Alessandro Meliso">
+                                <div class="speaker-card">
+                                    <span class="bonus-tag">BÔNUS</span>
+                                    <img src="assets/palestrantes/alessandro-meliso.webp" alt="Alessandro Meliso" class="speaker-img" loading="lazy">
+                                    <div class="speaker-info">
+                                        <h4 class="speaker-name">Alessandro Meliso</h4>
+                                        <p class="speaker-theme">Proteção patrimonial: técnicas de defesa no processo executivo</p>
+                                        <p class="speaker-cv">O Professor Alessandro Meliso foi Juiz de Direito por mais de 21 anos, é Mestre em Ciências Jurídicas pela Faculdade de Direito Universidade Clássica de Lisboa.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-name="Alex Finizola">
+                                <div class="speaker-card">
+                                    <span class="bonus-tag">BÔNUS</span>
+                                    <img src="assets/palestrantes/alex-finizola.webp" alt="Alex Finizola" class="speaker-img" loading="lazy">
+                                    <div class="speaker-info">
+                                        <h4 class="speaker-name">Alex Finizola</h4>
+                                        <p class="speaker-theme">Planejamento internacionais</p>
+                                        <p class="speaker-cv">Mestrando em Contabilidade e Direito Tributário (FUCAPE). Pós-graduado/LLM em PPS (FGV SP). Vice-presidente do Grupo de Estudos de PPS e Holdings da OAB SP.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-name="Alexandre Arregui">
+                                <div class="speaker-card">
+                                    <span class="bonus-tag">BÔNUS</span>
+                                    <img src="assets/palestrantes/alexandre-arregui.webp" alt="Alexandre Arregui" class="speaker-img" loading="lazy">
+                                    <div class="speaker-info">
+                                        <h4 class="speaker-name">Alexandre Arregui</h4>
+                                        <p class="speaker-theme">Offshore e Trusts</p>
+                                        <p class="speaker-cv">Especialista em PPS Internacional. Pós-graduado pela PUCRS, The Geneva Graduate Institute, ITESO, Université de Genève e Sotheby’s Institute.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-name="Ana C. Brochado">
+                                <div class="speaker-card">
+                                    <span class="bonus-tag">BÔNUS</span>
+                                    <img src="assets/palestrantes/ana-carolina.webp" alt="Ana C. Brochado" class="speaker-img" loading="lazy">
+                                    <div class="speaker-info">
+                                        <h4 class="speaker-name">Ana C. Brochado</h4>
+                                        <p class="speaker-theme">Herança digital e os desafios do planejamento sucessório</p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-name="Felipe Esteves">
+                                <div class="speaker-card">
+                                    <span class="bonus-tag">BÔNUS</span>
+                                    <img src="assets/palestrantes/felipe-esteves.webp" alt="Felipe Esteves" class="speaker-img" loading="lazy">
+                                    <div class="speaker-info">
+                                        <h4 class="speaker-name">Felipe Esteves</h4>
+                                        <p class="speaker-theme">Holding rural</p>
+                                        <p class="speaker-cv">Advogado especialista em contratos e planejamento tributário no agronegócio.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-name="Isabella Paranaguá">
+                                <div class="speaker-card">
+                                    <span class="bonus-tag">BÔNUS</span>
+                                    <img src="assets/palestrantes/isabella-paranagua.webp" alt="Isabella Paranaguá" class="speaker-img" loading="lazy">
+                                    <div class="speaker-info">
+                                        <h4 class="speaker-name">Isabella Paranaguá</h4>
+                                        <p class="speaker-theme">Contratos de namoro e união estável</p>
+                                        <p class="speaker-cv">Conselheira federal da OAB. Presidente da Comissão Nacional de Sucessões do CFOAB. Pós-doutora pela Universidade de Birmingham.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-name="Jefferson Valentin">
+                                <div class="speaker-card">
+                                    <span class="bonus-tag">BÔNUS</span>
+                                    <img src="assets/palestrantes/jefferson-valentin.webp" alt="Jefferson Valentin" class="speaker-img" loading="lazy">
+                                    <div class="speaker-info">
+                                        <h4 class="speaker-name">Jefferson Valentin</h4>
+                                        <p class="speaker-theme">Reflexos da Reforma Tributária nos Planejamentos</p>
+                                        <p class="speaker-cv">Auditor Fiscal da Receita Estadual de São Paulo, Inspetor de Fiscalização do ITCMD.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-name="João Teixeira">
+                                <div class="speaker-card">
+                                    <span class="bonus-tag">BÔNUS</span>
+                                    <img src="assets/palestrantes/joao-teixeira.webp" alt="João Teixeira" class="speaker-img" loading="lazy">
+                                    <div class="speaker-info">
+                                        <h4 class="speaker-name">João Teixeira</h4>
+                                        <p class="speaker-theme">Governança</p>
+                                        <p class="speaker-cv">Conselheiro Consultivo Certificado. Consultor em PPS e Governança Familiar há 16 anos. Professor de Governança Corporativa em MBA.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-name="Jonatas Albino">
+                                <div class="speaker-card">
+                                    <span class="bonus-tag">BÔNUS</span>
+                                    <img src="assets/palestrantes/jonatas-albino.webp" alt="Jonatas Albino" class="speaker-img" loading="lazy">
+                                    <div class="speaker-info">
+                                        <h4 class="speaker-name">Jonatas Albino</h4>
+                                        <p class="speaker-theme">ITCMD na visão da SEFAZ/SP</p>
+                                        <p class="speaker-cv">Chefe do Núcleo de fiscalização de ITCMD na UGC/ITCMD da SEFAZ/SP.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-name="Líbera Copetti">
+                                <div class="speaker-card">
+                                    <span class="bonus-tag">BÔNUS</span>
+                                    <img src="assets/palestrantes/libera-copetti.webp" alt="Líbera Copetti" class="speaker-img" loading="lazy">
+                                    <div class="speaker-info">
+                                        <h4 class="speaker-name">Líbera Copetti</h4>
+                                        <p class="speaker-theme">PPS no agronegócio</p>
+                                        <p class="speaker-cv">Professora. Mestre em Direito. Presidente da Comissão Nacional do Agronegócio do IBDFAM.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-name="Luiz Couto">
+                                <div class="speaker-card">
+                                    <span class="bonus-tag">BÔNUS</span>
+                                    <img src="assets/palestrantes/luiz-couto.webp" alt="Luiz Couto" class="speaker-img" loading="lazy">
+                                    <div class="speaker-info">
+                                        <h4 class="speaker-name">Luiz Couto</h4>
+                                        <p class="speaker-theme">Técnicas de venda para PPS</p>
+                                        <p class="speaker-cv">Advogado público concursado. Especialista em PPS pela FGV. Planejador Financeiro Certificado e Consultor de Valores Mobiliários.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-name="Mariana Maduro">
+                                <div class="speaker-card">
+                                    <span class="bonus-tag">BÔNUS</span>
+                                    <img src="assets/palestrantes/mariana-maduro.png" alt="Mariana Maduro" class="speaker-img" loading="lazy">
+                                    <div class="speaker-info">
+                                        <h4 class="speaker-name">Mariana Maduro</h4>
+                                        <p class="speaker-theme">S/A como instrumento de planejamento patrimonial e sucessório</p>
+                                        <p class="speaker-cv">Advogada especializada em Direito Societário e M&A. Professora de Direito Empresarial (FGV, IBMEC, PUC, EMERJ e UERJ).</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-name="Mario Delgado">
+                                <div class="speaker-card">
+                                    <span class="bonus-tag">BÔNUS</span>
+                                    <img src="assets/palestrantes/mario-delgado.webp" alt="Mario Delgado" class="speaker-img" loading="lazy">
+                                    <div class="speaker-info">
+                                        <h4 class="speaker-name">Mario Delgado</h4>
+                                        <p class="speaker-theme">Cuidados no planejamento da partilha de participação</p>
+                                        <p class="speaker-cv">Mestre em Direito Civil (PUC-SP).</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-name="Bia Machnick">
+                                <div class="speaker-card">
+                                    <span class="bonus-tag">BÔNUS</span>
+                                    <img src="assets/palestrantes/bia-machnick.png" alt="Bia Machnick" class="speaker-img" loading="lazy">
+                                    <div class="speaker-info">
+                                        <h4 class="speaker-name">Bia Machnick</h4>
+                                        <p class="speaker-theme">Precificação e negociação de honorários na prática</p>
+                                        <p class="speaker-cv">Professora e consultora em gestão Financeira. Autora de 5 livros na área de Finanças e Formação de preços.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-name="Juliana Guerra">
+                                <div class="speaker-card">
+                                    <span class="bonus-tag">BÔNUS</span>
+                                    <img src="assets/palestrantes/juliana-guerra.webp" alt="Juliana Guerra" class="speaker-img" loading="lazy">
+                                    <div class="speaker-info">
+                                        <h4 class="speaker-name">Juliana Guerra</h4>
+                                        <p class="speaker-theme">O mapa dos conflitos societários aplicado ao PPS</p>
+                                        <p class="speaker-cv">Advogada há 15 anos, Mestre em Psicanálise e Práticas Sociais, com atuação em advocacia empresarial societária.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-name="Silvia Marzagão">
+                                <div class="speaker-card">
+                                    <span class="bonus-tag">BÔNUS</span>
+                                    <img src="assets/palestrantes/silvia-marzagao.webp" alt="Silvia Marzagão" class="speaker-img" loading="lazy">
+                                    <div class="speaker-info">
+                                        <h4 class="speaker-name">Silvia Marzagão</h4>
+                                        <p class="speaker-theme">Atendimento ao cliente</p>
+                                        <p class="speaker-cv">Presidenta da Comissão da Advocacia de Família e Sucessões da OAB/SP.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-name="Marcia Ferreira">
+                                <div class="speaker-card">
+                                    <span class="bonus-tag">BÔNUS</span>
+                                    <img src="assets/palestrantes/marcia-ferreira.webp" alt="Marcia Ferreira" class="speaker-img" loading="lazy">
+                                    <div class="speaker-info">
+                                        <h4 class="speaker-name">Marcia Ferreira</h4>
+                                        <p class="speaker-theme">Contabilidade para holdings</p>
+                                        <p class="speaker-cv">Dra. em Ciências Contábeis (UnB). Sócia da Ferreira Holding Auditores. Autora de Contabilidade Introdutória de Holding.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-name="Pablo Arruda">
+                                <div class="speaker-card">
+                                    <span class="bonus-tag">BÔNUS</span>
+                                    <img src="assets/palestrantes/pablo-arruda.webp" alt="Pablo Arruda" class="speaker-img" loading="lazy">
+                                    <div class="speaker-info">
+                                        <h4 class="speaker-name">Pablo Arruda</h4>
+                                        <p class="speaker-theme">O confronto entre os artigos 110 e 116 no CNT</p>
+                                        <p class="speaker-cv">Advogado e professor de Direito Empresarial há mais de 2 décadas.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-name="Rodrigo Mazzei">
+                                <div class="speaker-card">
+                                    <span class="bonus-tag">BÔNUS</span>
+                                    <img src="assets/palestrantes/rodrigo-mazzei.webp" alt="Rodrigo Mazzei" class="speaker-img" loading="lazy">
+                                    <div class="speaker-info">
+                                        <h4 class="speaker-name">Rodrigo Mazzei</h4>
+                                        <p class="speaker-theme">Partilha em vida e seus efeitos para o PPS</p>
+                                        <p class="speaker-cv">Professor da UFES (graduação e PPGDir) e da FUCAPE Business School.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-name="Vanessa Chincoli">
+                                <div class="speaker-card">
+                                    <span class="bonus-tag">BÔNUS</span>
+                                    <img src="assets/palestrantes/vanessa-chincoli.webp" alt="Vanessa Chincoli" class="speaker-img" loading="lazy">
+                                    <div class="speaker-info">
+                                        <h4 class="speaker-name">Vanessa Chincoli</h4>
+                                        <p class="speaker-theme">Cláusulas testamentárias</p>
+                                        <p class="speaker-cv">Mestre em Direito pela UFRGS. Advogada e professora de Direito de Família e Sucessões.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-name="Hygoor Jorge">
+                                <div class="speaker-card">
+                                    <span class="bonus-tag">BÔNUS</span>
+                                    <img src="assets/palestrantes/hygoor-jorge.webp" alt="Hygoor Jorge" class="speaker-img" loading="lazy">
+                                    <div class="speaker-info">
+                                        <h4 class="speaker-name">Hygoor Jorge</h4>
+                                        <p class="speaker-theme">Ativos securitários</p>
+                                        <p class="speaker-cv">Professor da LLM em Direito Empresarial. Membro do IBEF. Mestrando em Contabilidade Tributária pela FUCAPE/RJ.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-name="Fernando Alberto">
+                                <div class="speaker-card">
+                                    <span class="bonus-tag">BÔNUS</span>
+                                    <img src="assets/palestrantes/fernando-alberto.webp" alt="Fernando Alberto" class="speaker-img" loading="lazy">
+                                    <div class="speaker-info">
+                                        <h4 class="speaker-name">Fernando Alberto</h4>
+                                        <p class="speaker-theme">Nua-propriedade como estratégia tributária</p>
+                                        <p class="speaker-cv">Advogado com formação em Administração de Empresas e Contabilidade. Pós-graduado em PPS pela FGV Law. MBA em Holding.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-name="Rosana P. Muknicka">
+                                <div class="speaker-card">
+                                    <span class="bonus-tag">BÔNUS</span>
+                                    <img src="assets/palestrantes/mentoria-pps-e-holdings-rosana-p-muknicka.webp" alt="Rosana P. Muknicka" class="speaker-img" loading="lazy">
+                                    <div class="speaker-info">
+                                        <h4 class="speaker-name">Rosana P. Muknicka</h4>
+                                        <p class="speaker-theme">Tratamento de dados no PPS</p>
+                                        <p class="speaker-cv">Especialista em Direito Digital com mais de 25 anos de experiência. Graduada em Direito pela USP.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-name="Elielton Souza">
+                                <div class="speaker-card">
+                                    <span class="bonus-tag">BÔNUS</span>
+                                    <img src="assets/palestrantes/mentoria-pps-e-holdings-elielton-souza.webp" alt="Elielton Souza" class="speaker-img" loading="lazy">
+                                    <div class="speaker-info">
+                                        <h4 class="speaker-name">Elielton Souza</h4>
+                                        <p class="speaker-theme">Integralização de imóveis rurais na PJ</p>
+                                        <p class="speaker-cv">Contador com quase 10 anos em escritório de contabilidade. Instrutor de cursos na área fiscal e tributária.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-name="Frederico Bastos">
+                                <div class="speaker-card">
+                                    <span class="bonus-tag">BÔNUS</span>
+                                    <img src="assets/palestrantes/frederico-mariana.webp" alt="Frederico Bastos" class="speaker-img" loading="lazy">
+                                    <div class="speaker-info">
+                                        <h4 class="speaker-name">Frederico Bastos</h4>
+                                        <p class="speaker-theme">Prática em Planejamento Internacional</p>
+                                        <p class="speaker-cv">Professor de Direito Tributário no Insper, Ibmec e FGV. Mestre pela FGV. Coordenador do OTT do Insper.</p>
+                                    </div>
+                                </div>
+                            </div>
