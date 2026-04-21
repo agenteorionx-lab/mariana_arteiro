@@ -56,7 +56,7 @@ body {
    Implementação de luxo para cada seção
    ========================================================================== */
 
-    /* Regra geral para todas as seções com textura */
+    /* Regra geral para todas as seções com textura e otimização de renderização */
     .benefits,
     .pain,
     .how-it-works,
@@ -71,6 +71,9 @@ body {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        /* PERFORMANCE PRO: Só renderiza quando estiver perto da tela */
+        content-visibility: auto;
+        contain-intrinsic-size: 1px 500px; 
     }
 
     /* Adicionando overlay escuro para garantir legibilidade e fusão profunda apenas no mentor */
@@ -1770,6 +1773,9 @@ body {
         box-shadow: 0 0 15px rgba(255, 51, 51, 0.15);
         /* Brilho neon suave */
         position: relative;
+        /* PERFORMANCE PRO: Isola a renderização */
+        content-visibility: auto;
+        contain-intrinsic-size: 300px 580px;
     }
 
     .speaker-card:hover {
