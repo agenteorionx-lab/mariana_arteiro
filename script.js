@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    document.body.classList.add('js-enabled');
     // 1. SCROLL REVEAL ANIMATION
     const revealElements = document.querySelectorAll('.reveal');
 
@@ -26,9 +27,15 @@ document.addEventListener('DOMContentLoaded', () => {
             img: "assets/palestrantes/adriana-pacheco.webp"
         },
         {
+            name: "Alessandro Meliso",
+            theme: "Proteção patrimonial: técnicas de defesa no processo executivo",
+            cv: "O Professor Alessandro Meliso foi Juiz de Direito por mais de 21 anos, é Mestre em Ciências Jurídicas pela Faculdade de Direito Universidade Clássica de Lisboa.",
+            img: "assets/palestrantes/alessandro-meliso.webp"
+        },
+        {
             name: "Alex Finizola",
             theme: "Planejamento internacionais",
-            cv: "Mestrando em Contabilidade e Direito Tributário (FUCAPE). Pós-graduado/LLM em PPS (FGV SP). Vice-presidente de Estudos de PPS e Holdings da OAB SP.",
+            cv: "Mestrando em Contabilidade e Direito Tributário (FUCAPE). Pós-graduado/LLM em PPS (FGV SP). Vice-presidente do Grupo de Estudos de PPS e Holdings da OAB SP.",
             img: "assets/palestrantes/alex-finizola.webp"
         },
         {
@@ -64,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             name: "João Teixeira",
             theme: "Governança",
-            cv: "Conselheiro Consultivo Certificado. Consultor em Planejamento Sucessório e Governança Familiar há 16 anos. Professor de Governança Corporativa.",
+            cv: "Conselheiro Consultivo Certificado. Consultor em PPS e Governança Familiar há 16 anos. Professor de Governança Corporativa em MBA.",
             img: "assets/palestrantes/joao-teixeira.webp"
         },
         {
@@ -80,20 +87,26 @@ document.addEventListener('DOMContentLoaded', () => {
             img: "assets/palestrantes/libera-copetti.webp"
         },
         {
+            name: "Luiz Couto",
+            theme: "Técnicas de venda para PPS",
+            cv: "Advogado público concursado. Especialista em PPS pela FGV. Planejador Financeiro Certificado e Consultor de Valores Mobiliários.",
+            img: "assets/palestrantes/luiz-couto.webp"
+        },
+        {
             name: "Mariana Maduro",
-            theme: "S/A como instrumento de planejamento",
+            theme: "S/A como instrumento de planejamento patrimonial e sucessório",
             cv: "Advogada especializada em Direito Societário e M&A. Professora de Direito Empresarial (FGV, IBMEC, PUC, EMERJ e UERJ).",
             img: "assets/palestrantes/mariana-maduro.png"
         },
         {
             name: "Mario Delgado",
-            theme: "Cuidados no planejamento da partilha",
+            theme: "Cuidados no planejamento da partilha de participação",
             cv: "Mestre em Direito Civil (PUC-SP).",
             img: "assets/palestrantes/mario-delgado.webp"
         },
         {
             name: "Bia Machnick",
-            theme: "Precificação e negociação de honorários",
+            theme: "Precificação e negociação de honorários na prática",
             cv: "Professora e consultora em gestão Financeira. Autora de 5 livros na área de Finanças e Formação de preços.",
             img: "assets/palestrantes/bia-machnick.png"
         },
@@ -166,25 +179,26 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
     const wrapper = document.getElementById('speakers-wrapper');
-
-    speakers.forEach(speaker => {
-        const slide = document.createElement('div');
-        slide.className = 'swiper-slide';
-        slide.setAttribute('data-name', speaker.name);
-        
-        slide.innerHTML = `
-            <div class="speaker-card">
-                <span class="bonus-tag">BÔNUS</span>
-                <img src="${speaker.img}" alt="${speaker.name}" class="speaker-img" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400/a00000/FAEABC?text=Foto+Indisponível';">
-                <div class="speaker-info">
-                    <h4 class="speaker-name">${speaker.name}</h4>
-                    <p class="speaker-theme">${speaker.theme}</p>
-                    ${speaker.cv ? `<p class="speaker-cv">${speaker.cv}</p>` : ''}
+    if (wrapper) {
+        speakers.forEach(speaker => {
+            const slide = document.createElement('div');
+            slide.className = 'swiper-slide';
+            slide.setAttribute('data-name', speaker.name);
+            
+            slide.innerHTML = `
+                <div class="speaker-card">
+                    <span class="bonus-tag">BÔNUS</span>
+                    <img src="${speaker.img}" alt="${speaker.name}" class="speaker-img" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400/a00000/FAEABC?text=Foto+Indisponível';">
+                    <div class="speaker-info">
+                        <h4 class="speaker-name">${speaker.name}</h4>
+                        <p class="speaker-theme">${speaker.theme}</p>
+                        ${speaker.cv ? `<p class="speaker-cv">${speaker.cv}</p>` : ''}
+                    </div>
                 </div>
-            </div>
-        `;
-        wrapper.appendChild(slide);
-    });
+            `;
+            wrapper.appendChild(slide);
+        });
+    }
 
     // 3. INITIALIZE SWIPER CAROUSEL (Otimizado para Mobile vs Desktop)
     const isMobile = window.innerWidth < 992;
@@ -218,17 +232,23 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    const swiper = new Swiper('.specialistsSlider', swiperOptions);
+    if (typeof Swiper !== 'undefined' && document.querySelector('.specialistsSlider')) {
+        try {
+            const swiper = new Swiper('.specialistsSlider', swiperOptions);
 
-    // Pausa adicional para dispositivos de toque
-    const sliderEl = document.querySelector('.specialistsSlider');
-    if (sliderEl) {
-        sliderEl.addEventListener('touchstart', () => {
-            swiper.autoplay.stop();
-        });
-        sliderEl.addEventListener('touchend', () => {
-            swiper.autoplay.start();
-        });
+            // Pausa adicional para dispositivos de toque
+            const sliderEl = document.querySelector('.specialistsSlider');
+            if (sliderEl) {
+                sliderEl.addEventListener('touchstart', () => {
+                    if (swiper.autoplay) swiper.autoplay.stop();
+                });
+                sliderEl.addEventListener('touchend', () => {
+                    if (swiper.autoplay) swiper.autoplay.start();
+                });
+            }
+        } catch (e) {
+            console.error("Erro ao inicializar Swiper:", e);
+        }
     }
 
     // 4. HEADER SCROLL EFFECT
@@ -245,6 +265,22 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-
+    // 5. FAQ ACCORDION LOGIC
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+        const summary = item.querySelector('summary');
+        if (summary) {
+            summary.addEventListener('click', (e) => {
+                // Se o item que clicamos NÃO está aberto, queremos abrir ele e FECHAR os outros
+                if (!item.hasAttribute('open')) {
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.removeAttribute('open');
+                        }
+                    });
+                }
+            });
+        }
+    });
 
 });
