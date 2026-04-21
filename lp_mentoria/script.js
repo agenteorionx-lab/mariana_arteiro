@@ -11,27 +11,28 @@ document.addEventListener('DOMContentLoaded', () => {
     // 2. DYNAMIC SPEAKERS LIST (MOVED TO STATIC HTML FOR STABILITY)
 
 
-    // 3. INITIALIZE SWIPER CAROUSEL (Ultra-Otimizado para Estabilidade Mobile)
+    // 3. INITIALIZE SWIPER CAROUSEL (Otimizado: Movimento contínuo sem crash)
     const isMobile = window.innerWidth < 992;
 
     const swiperOptions = {
         slidesPerView: 1,
         spaceBetween: 20,
-        loop: false, // Desativa loop para economizar memória e evitar crash no mobile
+        loop: !isMobile, // Loop infinito apenas no desktop (mais memória disponível)
+        rewind: isMobile, // No mobile, volta ao início ao chegar no fim (economiza 50% de RAM vs loop)
         grabCursor: true,
         lazy: {
             loadPrevNext: true,
             loadPrevNextAmount: 2
         },
-        speed: 600, 
+        speed: 800, 
         autoplay: {
-            delay: 4000,
-            disableOnInteraction: true,
+            delay: 3500,
+            disableOnInteraction: false,
         },
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
-            dynamicBullets: true // Ajuda na performance com muitos slides
+            dynamicBullets: true
         },
         navigation: {
             nextEl: '.swiper-button-next',
@@ -42,14 +43,13 @@ document.addEventListener('DOMContentLoaded', () => {
             992: { 
                 slidesPerView: 3, 
                 spaceBetween: 30,
-                loop: true, // Reativa loop apenas no desktop se necessário
                 speed: 8000,
                 autoplay: {
                     delay: 0,
                     disableOnInteraction: false
                 }
             },
-            1200: { slidesPerView: 4, spaceBetween: 30, loop: true, speed: 8000, autoplay: { delay: 0 } }
+            1200: { slidesPerView: 4, spaceBetween: 30, speed: 8000, autoplay: { delay: 0 } }
         }
     };
 
