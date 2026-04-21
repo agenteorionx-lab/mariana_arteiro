@@ -178,25 +178,26 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
     const wrapper = document.getElementById('speakers-wrapper');
-
-    speakers.forEach(speaker => {
-        const slide = document.createElement('div');
-        slide.className = 'swiper-slide';
-        slide.setAttribute('data-name', speaker.name);
-        
-        slide.innerHTML = `
-            <div class="speaker-card">
-                <span class="bonus-tag">BÔNUS</span>
-                <img src="${speaker.img}" alt="${speaker.name}" class="speaker-img" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400/a00000/FAEABC?text=Foto+Indisponível';">
-                <div class="speaker-info">
-                    <h4 class="speaker-name">${speaker.name}</h4>
-                    <p class="speaker-theme">${speaker.theme}</p>
-                    ${speaker.cv ? `<p class="speaker-cv">${speaker.cv}</p>` : ''}
+    if (wrapper) {
+        speakers.forEach(speaker => {
+            const slide = document.createElement('div');
+            slide.className = 'swiper-slide';
+            slide.setAttribute('data-name', speaker.name);
+            
+            slide.innerHTML = `
+                <div class="speaker-card">
+                    <span class="bonus-tag">BÔNUS</span>
+                    <img src="${speaker.img}" alt="${speaker.name}" class="speaker-img" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400/a00000/FAEABC?text=Foto+Indisponível';">
+                    <div class="speaker-info">
+                        <h4 class="speaker-name">${speaker.name}</h4>
+                        <p class="speaker-theme">${speaker.theme}</p>
+                        ${speaker.cv ? `<p class="speaker-cv">${speaker.cv}</p>` : ''}
+                    </div>
                 </div>
-            </div>
-        `;
-        wrapper.appendChild(slide);
-    });
+            `;
+            wrapper.appendChild(slide);
+        });
+    }
 
     // 3. INITIALIZE SWIPER CAROUSEL (Otimizado para Mobile vs Desktop)
     const isMobile = window.innerWidth < 992;
@@ -230,17 +231,23 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    const swiper = new Swiper('.specialistsSlider', swiperOptions);
+    if (typeof Swiper !== 'undefined' && document.querySelector('.specialistsSlider')) {
+        try {
+            const swiper = new Swiper('.specialistsSlider', swiperOptions);
 
-    // Pausa adicional para dispositivos de toque
-    const sliderEl = document.querySelector('.specialistsSlider');
-    if (sliderEl) {
-        sliderEl.addEventListener('touchstart', () => {
-            swiper.autoplay.stop();
-        });
-        sliderEl.addEventListener('touchend', () => {
-            swiper.autoplay.start();
-        });
+            // Pausa adicional para dispositivos de toque
+            const sliderEl = document.querySelector('.specialistsSlider');
+            if (sliderEl) {
+                sliderEl.addEventListener('touchstart', () => {
+                    if (swiper.autoplay) swiper.autoplay.stop();
+                });
+                sliderEl.addEventListener('touchend', () => {
+                    if (swiper.autoplay) swiper.autoplay.start();
+                });
+            }
+        } catch (e) {
+            console.error("Erro ao inicializar Swiper:", e);
+        }
     }
 
     // 4. HEADER SCROLL EFFECT
