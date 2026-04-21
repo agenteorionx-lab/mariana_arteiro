@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
     document.body.classList.add('js-enabled');
     // 1. SCROLL REVEAL ANIMATION
-    const revealElements = document.querySelectorAll('.reveal');
+    const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
 
     const revealOnScroll = () => {
         const windowHeight = window.innerHeight;
-        const elementVisible = 100;
+        const elementVisible = 80; // Ponto de ativação levemente antecipado para fluidez
 
         revealElements.forEach((el) => {
             const elementTop = el.getBoundingClientRect().top;

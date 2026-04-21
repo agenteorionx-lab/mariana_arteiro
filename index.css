@@ -2432,14 +2432,47 @@ body {
     /* Reveal fallback: Only hide if JS is enabled */
     body.js-enabled .reveal {
         opacity: 0;
-        transform: translateY(30px);
-        transition: all 0.8s ease-out;
+        transform: translateY(40px);
+        transition: opacity 1s cubic-bezier(0.5, 0, 0, 1), transform 1s cubic-bezier(0.5, 0, 0, 1);
+        will-change: opacity, transform;
     }
 
-    body.js-enabled .reveal.active {
-        opacity: 1;
-        transform: translateY(0);
+    body.js-enabled .reveal-left {
+        opacity: 0;
+        transform: translateX(-50px);
+        transition: opacity 1.2s cubic-bezier(0.5, 0, 0, 1), transform 1.2s cubic-bezier(0.5, 0, 0, 1);
+        will-change: opacity, transform;
     }
+
+    body.js-enabled .reveal-right {
+        opacity: 0;
+        transform: translateX(50px);
+        transition: opacity 1.2s cubic-bezier(0.5, 0, 0, 1), transform 1.2s cubic-bezier(0.5, 0, 0, 1);
+        will-change: opacity, transform;
+    }
+
+    body.js-enabled .reveal-scale {
+        opacity: 0;
+        transform: scale(0.9) translateY(20px);
+        transition: opacity 1s cubic-bezier(0.5, 0, 0, 1), transform 1s cubic-bezier(0.5, 0, 0, 1);
+        will-change: opacity, transform;
+    }
+
+    body.js-enabled .reveal.active,
+    body.js-enabled .reveal-left.active,
+    body.js-enabled .reveal-right.active,
+    body.js-enabled .reveal-scale.active {
+        opacity: 1;
+        transform: translate(0) scale(1);
+    }
+
+    /* Staggered Child Reveal */
+    .reveal > *:nth-child(1) { transition-delay: 0.1s; }
+    .reveal > *:nth-child(2) { transition-delay: 0.2s; }
+    .reveal > *:nth-child(3) { transition-delay: 0.3s; }
+    .reveal > *:nth-child(4) { transition-delay: 0.4s; }
+    .reveal > *:nth-child(5) { transition-delay: 0.5s; }
+    .reveal > *:nth-child(6) { transition-delay: 0.6s; }
 
     .checkout-card-logo {
         height: 102px; /* Aumentado em 20% (85px -> 102px) */
