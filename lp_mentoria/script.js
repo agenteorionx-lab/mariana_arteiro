@@ -26,9 +26,15 @@ document.addEventListener('DOMContentLoaded', () => {
             img: "assets/palestrantes/adriana-pacheco.webp"
         },
         {
+            name: "Alessandro Meliso",
+            theme: "Proteção patrimonial: técnicas de defesa no processo executivo",
+            cv: "O Professor Alessandro Meliso foi Juiz de Direito por mais de 21 anos, é Mestre em Ciências Jurídicas pela Faculdade de Direito Universidade Clássica de Lisboa.",
+            img: "assets/palestrantes/alessandro-meliso.webp"
+        },
+        {
             name: "Alex Finizola",
             theme: "Planejamento internacionais",
-            cv: "Mestrando em Contabilidade e Direito Tributário (FUCAPE). Pós-graduado/LLM em PPS (FGV SP). Vice-presidente de Estudos de PPS e Holdings da OAB SP.",
+            cv: "Mestrando em Contabilidade e Direito Tributário (FUCAPE). Pós-graduado/LLM em PPS (FGV SP). Vice-presidente do Grupo de Estudos de PPS e Holdings da OAB SP.",
             img: "assets/palestrantes/alex-finizola.webp"
         },
         {
@@ -64,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             name: "João Teixeira",
             theme: "Governança",
-            cv: "Conselheiro Consultivo Certificado. Consultor em Planejamento Sucessório e Governança Familiar há 16 anos. Professor de Governança Corporativa.",
+            cv: "Conselheiro Consultivo Certificado. Consultor em PPS e Governança Familiar há 16 anos. Professor de Governança Corporativa em MBA.",
             img: "assets/palestrantes/joao-teixeira.webp"
         },
         {
@@ -80,20 +86,26 @@ document.addEventListener('DOMContentLoaded', () => {
             img: "assets/palestrantes/libera-copetti.webp"
         },
         {
+            name: "Luiz Couto",
+            theme: "Técnicas de venda para PPS",
+            cv: "Advogado público concursado. Especialista em PPS pela FGV. Planejador Financeiro Certificado e Consultor de Valores Mobiliários.",
+            img: "assets/palestrantes/luiz-couto.webp"
+        },
+        {
             name: "Mariana Maduro",
-            theme: "S/A como instrumento de planejamento",
+            theme: "S/A como instrumento de planejamento patrimonial e sucessório",
             cv: "Advogada especializada em Direito Societário e M&A. Professora de Direito Empresarial (FGV, IBMEC, PUC, EMERJ e UERJ).",
             img: "assets/palestrantes/mariana-maduro.png"
         },
         {
             name: "Mario Delgado",
-            theme: "Cuidados no planejamento da partilha",
+            theme: "Cuidados no planejamento da partilha de participação",
             cv: "Mestre em Direito Civil (PUC-SP).",
             img: "assets/palestrantes/mario-delgado.webp"
         },
         {
             name: "Bia Machnick",
-            theme: "Precificação e negociação de honorários",
+            theme: "Precificação e negociação de honorários na prática",
             cv: "Professora e consultora em gestão Financeira. Autora de 5 livros na área de Finanças e Formação de preços.",
             img: "assets/palestrantes/bia-machnick.png"
         },
@@ -245,6 +257,22 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-
+    // 5. FAQ ACCORDION LOGIC
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+        const summary = item.querySelector('summary');
+        if (summary) {
+            summary.addEventListener('click', (e) => {
+                // Se o item que clicamos NÃO está aberto, queremos abrir ele e FECHAR os outros
+                if (!item.hasAttribute('open')) {
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.removeAttribute('open');
+                        }
+                    });
+                }
+            });
+        }
+    });
 
 });
