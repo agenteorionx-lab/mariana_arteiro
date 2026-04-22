@@ -175,6 +175,118 @@ ul {
 }
 
 /* ====================================================
+   Countdown Bar (Urgência)
+   ==================================================== */
+.countdown-bar {
+    background: linear-gradient(135deg, #d32f2f 0%, #b71c1c 100%);
+    color: #FFFFFF;
+    padding: 15px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1001;
+    border-bottom: 2px solid rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Compensação para a barra fixa */
+body {
+    padding-top: 100px; /* Altura aproximada da barra */
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 90px;
+    }
+}
+
+.countdown-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.countdown-label {
+    font-size: 1.2rem; /* Aumentado em +10% */
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    line-height: 1.2;
+}
+
+.countdown-label i {
+    color: #ffca28;
+    font-size: 1.5rem;
+}
+
+.timer-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.timer-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 60px;
+}
+
+.timer-number {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.timer-label {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 5px;
+}
+
+.timer-separator {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: -10px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 768px) {
+    .countdown-bar {
+        padding: 12px 0;
+    }
+    
+    .countdown-label {
+        font-size: 1.1rem; /* Aumentado em +10% */
+        padding: 0 10px;
+        line-height: 1.2;
+    }
+
+    .timer-number {
+        font-size: 1.8rem;
+    }
+    
+    .timer-item {
+        min-width: 45px;
+    }
+    
+    .timer-display {
+        gap: 8px;
+    }
+}
+
+/* ====================================================
    Hero Section (Dobra 1)
    ==================================================== */
 .hero-section {

@@ -8,10 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     revealOnScroll();
     */
 
-    // 2. DYNAMIC SPEAKERS LIST (MOVED TO STATIC HTML FOR STABILITY)
-
-
-    // 3. INITIALIZE SWIPER CAROUSEL (Otimizado: Movimento contínuo sem crash)
+    // 2. INITIALIZE SWIPER CAROUSEL (Otimizado: Movimento contínuo sem crash)
     const isMobile = window.innerWidth < 992;
 
     const swiperOptions = {

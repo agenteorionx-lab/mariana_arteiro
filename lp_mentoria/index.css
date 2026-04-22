@@ -53,10 +53,10 @@ body {
 }
     /* ==========================================================================
    TEXTURAS DE FUNDO PREMIUM (WAVES & SILK)
-   Implementação de luxo para cada seção
+   ImplementaÃ§Ã£o de luxo para cada seÃ§Ã£o
    ========================================================================== */
 
-    /* Regra geral para todas as seções com textura e otimização de renderização */
+    /* Regra geral para todas as seÃ§Ãµes com textura e otimizaÃ§Ã£o de renderizaÃ§Ã£o */
     .benefits,
     .pain,
     .how-it-works,
@@ -71,12 +71,12 @@ body {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        /* PERFORMANCE PRO: Só renderiza quando estiver perto da tela */
+        /* PERFORMANCE PRO: SÃ³ renderiza quando estiver perto da tela */
         content-visibility: auto;
         contain-intrinsic-size: 1px 500px; 
     }
 
-    /* Adicionando overlay escuro para garantir legibilidade e fusão profunda apenas no mentor */
+    /* Adicionando overlay escuro para garantir legibilidade e fusÃ£o profunda apenas no mentor */
     .mentor::after {
         content: '';
         position: absolute;
@@ -90,9 +90,9 @@ body {
         pointer-events: none;
     }
 
-    /* Aplicando as texturas específicas */
+    /* Aplicando as texturas especÃ­ficas */
 
-    /* .benefits background movido para a seção específica */
+    /* .benefits background movido para a seÃ§Ã£o especÃ­fica */
     /* .pain background agora utiliza CSS nativo */
     .how-it-works {
         background-color: #FAEABC;
@@ -130,7 +130,7 @@ body {
         background-image: none; /* Removida textura e filtros conforme solicitado */
     }
 
-    /* Fundo da seção de Solução (Cinza Grafite) */
+    /* Fundo da seÃ§Ã£o de SoluÃ§Ã£o (Cinza Grafite) */
     .how-it-works {
         position: relative;
         background-color: #FAEABC;
@@ -150,7 +150,7 @@ body {
     }
 
 
-    /* ---- Z-INDEX: Conteúdo sempre acima da textura e do overlay ---- */
+    /* ---- Z-INDEX: ConteÃºdo sempre acima da textura e do overlay ---- */
     .benefits>.container,
     .pain>.container,
     .how-it-works>.container,
@@ -217,7 +217,7 @@ body {
         padding-bottom: 5rem;
     }
 
-    /* Seção de Tela Cheia Imersiva */
+    /* SeÃ§Ã£o de Tela Cheia Imersiva */
     .section-fullscreen {
         min-height: 100vh;
         display: flex;
@@ -384,20 +384,20 @@ body {
     .hero {
         position: relative;
         padding-top: 50px;
-        /* Reduzido pois não há mais header */
+        /* Reduzido pois nÃ£o hÃ¡ mais header */
         padding-bottom: 50px;
         height: 100vh;
         /* Tela cheia */
         min-height: 700px;
-        /* Garante que não quebre em telas muito baixas */
+        /* Garante que nÃ£o quebre em telas muito baixas */
         display: flex;
         align-items: center;
-        /* Centraliza verticalmente o conteúdo */
+        /* Centraliza verticalmente o conteÃºdo */
         background: linear-gradient(135deg, var(--color-bordeaux) 0%, var(--color-black) 100%);
         overflow: hidden;
     }
 
-    /* Camada de Brilho (Glow) atrás da foto */
+    /* Camada de Brilho (Glow) atrÃ¡s da foto */
     .hero-glow {
         position: absolute;
         top: 50%;
@@ -424,7 +424,7 @@ body {
         pointer-events: none;
     }
 
-    /* Camada da Textura (Ondas) - Removida imagem deletada, mantendo apenas gradiente se necessário */
+    /* Camada da Textura (Ondas) - Removida imagem deletada, mantendo apenas gradiente se necessÃ¡rio */
     .hero::after {
         content: '';
         position: absolute;
@@ -473,7 +473,7 @@ body {
 
     .hero-content {
         max-width: 750px;
-        /* Aumentado para melhor distribuição horizontal */
+        /* Aumentado para melhor distribuiÃ§Ã£o horizontal */
     }
 
     .hero-logo-internal {
@@ -490,7 +490,7 @@ body {
         line-height: 1.05;
         font-weight: 700;
         transform: translateY(-15%);
-        /* Subindo apenas o título em 15% */
+        /* Subindo apenas o tÃ­tulo em 15% */
     }
 
     .headline span {
@@ -507,11 +507,12 @@ body {
     }
 
     .hero-btns {
+        margin-top: 10% !important; /* Abaixar o botao em 10% */
         margin-bottom: 2rem;
     }
 
-    /* Botão com o gradiente da referência */
-    /* Botão reduzido em 30% */
+    /* BotÃ£o com o gradiente da referÃªncia */
+    /* BotÃ£o reduzido em 30% */
     .btn-primary.large {
         background: var(--color-gold);
         border: none;
@@ -560,7 +561,7 @@ body {
 
     .benefits .section-title {
         color: var(--color-bordeaux);
-        /* Título em bordeaux para contrastar com o fundo ouro */
+        /* TÃ­tulo em bordeaux para contrastar com o fundo ouro */
     }
 
     .benefit-card {
@@ -585,7 +586,7 @@ body {
 
     .benefit-card h3 {
         color: var(--color-gold);
-        /* Detalhes da cor na escrita (títulos de bloco) */
+        /* Detalhes da cor na escrita (tÃ­tulos de bloco) */
         margin-bottom: 0.5rem;
     }
 
@@ -597,23 +598,23 @@ body {
     .benefit-card:hover {
         transform: translateY(-5px);
         box-shadow: 0 20px 50px rgba(160, 0, 0, 0.7);
-        /* Intensifica um pouquinho a pulsação do neon sem sair a borda */
+        /* Intensifica um pouquinho a pulsaÃ§Ã£o do neon sem sair a borda */
     }
 
     .icon-wrapper {
         width: 60px;
         height: 60px;
         background: rgba(250, 234, 188, 0.1);
-        /* Brilho sutil dourado no fundo do ícone */
+        /* Brilho sutil dourado no fundo do Ã­cone */
         border: 1px solid var(--color-gold);
-        /* Borda dourada para destacar o ícone no card preto */
+        /* Borda dourada para destacar o Ã­cone no card preto */
         border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
         margin-bottom: 1.5rem;
         color: var(--color-gold);
-        /* Ícones em Ouro: contraste máximo sobre o preto e harmonia com o fundo da seção */
+        /* Ãcones em Ouro: contraste mÃ¡ximo sobre o preto e harmonia com o fundo da seÃ§Ã£o */
         box-shadow: 0 0 15px rgba(250, 234, 188, 0.2);
         /* Neon dourado interno */
     }
@@ -623,7 +624,7 @@ body {
    ========================================================================== */
     .pain {
         position: relative;
-        /* Vermelho sólido oficial como fundo principal */
+        /* Vermelho sÃ³lido oficial como fundo principal */
         background: var(--color-bordeaux);
         overflow: hidden;
         min-height: 100vh;
@@ -647,7 +648,7 @@ body {
         pointer-events: none;
     }
 
-    /* Camada de Frisos Dourados (Linhas Finas em Código) */
+    /* Camada de Frisos Dourados (Linhas Finas em CÃ³digo) */
     .pain::after {
         content: '';
         position: absolute;
@@ -660,16 +661,16 @@ body {
         z-index: 0;
         pointer-events: none;
         filter: blur(0.5px);
-        /* Efeito metálico suave */
+        /* Efeito metÃ¡lico suave */
     }
 
     .pain-cards {
         display: grid;
-        /* Começa com coluna única no mobile */
+        /* ComeÃ§a com coluna Ãºnica no mobile */
         grid-template-columns: 1fr;
         gap: 1.5rem;
         max-width: 750px;
-        /* Reduzido para não ficar tão extenso na tela */
+        /* Reduzido para nÃ£o ficar tÃ£o extenso na tela */
         margin: 2rem auto 0;
         /* Menos margem para caber na tela */
     }
@@ -693,7 +694,7 @@ body {
         gap: 1.2rem;
         transition: var(--transition);
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-        /* Sombra de profundidade, não neon */
+        /* Sombra de profundidade, nÃ£o neon */
     }
 
     .pain-card:hover {
@@ -807,7 +808,7 @@ body {
         position: absolute;
         top: 50px;
         left: 15%;
-        /* Ajustado para enquadrar entre ícones */
+        /* Ajustado para enquadrar entre Ã­cones */
         right: 15%;
         height: 2px;
         background: linear-gradient(to right,
@@ -852,7 +853,7 @@ body {
         position: absolute;
         right: 0;
         top: 120px;
-        /* Abaixo dos ícones */
+        /* Abaixo dos Ã­cones */
         height: 100px;
         width: 1px;
         background: linear-gradient(to bottom, transparent, rgba(250, 234, 188, 0.2), transparent);
@@ -937,7 +938,7 @@ body {
         opacity: 0.8;
         margin-top: 1.5rem;
         max-width: 280px;
-        /* Trava largura para não misturar os textos */
+        /* Trava largura para nÃ£o misturar os textos */
     }
 
     /* DESTAQUE FINAL: DIRECIONAMENTO HUMANO */
@@ -946,7 +947,7 @@ body {
         justify-content: center;
         width: 100%;
         margin-top: 1rem;
-        /* Aproximação imediata */
+        /* AproximaÃ§Ã£o imediata */
     }
 
     .human-direction-box {
@@ -1015,7 +1016,7 @@ body {
     }
 
     .practical-card {
-        background: #ffffff; /* Fundo branco sólido para contraste sobre o bege */
+        background: #ffffff; /* Fundo branco sÃ³lido para contraste sobre o bege */
         border: 1.5px solid var(--color-bordeaux);
         border-radius: 30px;
         padding: 1.5rem 1rem;
@@ -1064,7 +1065,7 @@ body {
         align-items: center;
         justify-content: center;
         margin-bottom: 1.5rem;
-        /* Espaço reduzido */
+        /* EspaÃ§o reduzido */
         border: 1.5px solid rgba(250, 234, 188, 0.2);
         box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
     }
@@ -1106,13 +1107,13 @@ body {
         text-align: center;
     }
 
-    /* Rodapé da seção prática */
+    /* RodapÃ© da seÃ§Ã£o prÃ¡tica */
     .practical-section-footer {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-top: 2rem;
-        /* Trás todo o bloco final para cima */
+        /* TrÃ¡s todo o bloco final para cima */
         position: relative;
         z-index: 2;
     }
@@ -1126,7 +1127,7 @@ body {
         letter-spacing: 0.5px;
     }
 
-    /* ESTILO GLOBAL DE BOTÃO (RED-PILL) */
+    /* ESTILO GLOBAL DE BOTÃƒO (RED-PILL) */
     .btn,
     .btn-primary,
     .btn-checkout,
@@ -1179,7 +1180,7 @@ body {
     }
 
     .process-item {
-        background: #ffffff; /* Fundo branco sólido para contraste sobre o bege */
+        background: #ffffff; /* Fundo branco sÃ³lido para contraste sobre o bege */
         padding: 2.5rem 2rem;
         border-radius: var(--radius-lg);
         border: 1px solid rgba(0, 0, 0, 0.1);
@@ -1319,7 +1320,7 @@ body {
         padding: 1.5rem 2.2rem;
         font-size: 1.3rem;
         background: rgba(255, 255, 255, 0.05);
-        /* Fundo branco quase invisível */
+        /* Fundo branco quase invisÃ­vel */
         border-radius: 0 12px 12px 0;
         margin-bottom: 1.2rem;
         color: #ffffff;
@@ -1343,7 +1344,7 @@ body {
         z-index: 1;
     }
 
-    /* Elemento decorativo atrás da moldura */
+    /* Elemento decorativo atrÃ¡s da moldura */
     .premium-frame::before {
         content: '';
         position: absolute;
@@ -1428,7 +1429,7 @@ body {
 
     .video-card {
         border-radius: 20px;
-        /* Arredondamento conforme referência */
+        /* Arredondamento conforme referÃªncia */
         overflow: hidden;
         background: #000;
         box-shadow: 0 15px 45px rgba(160, 0, 0, 0.15);
@@ -1445,7 +1446,7 @@ body {
     .video-wrapper {
         position: relative;
         padding-bottom: 177.77%;
-        /* Proporção 9:16 (Shorts) */
+        /* ProporÃ§Ã£o 9:16 (Shorts) */
         height: 0;
         overflow: hidden;
         cursor: pointer;
@@ -1506,7 +1507,7 @@ body {
         grid-template-columns: 1fr;
         gap: 2rem;
         max-width: 1150px;
-        /* Proporção aumentada */
+        /* ProporÃ§Ã£o aumentada */
         margin: 0 auto;
     }
 
@@ -1545,7 +1546,7 @@ body {
     .audience-card h3 {
         font-size: 1.8rem;
         margin: 0;
-        color: var(--color-gold); /* Título volta a ser ouro para contraste no vermelho */
+        color: var(--color-gold); /* TÃ­tulo volta a ser ouro para contraste no vermelho */
         letter-spacing: 1px;
     }
 
@@ -1581,7 +1582,7 @@ body {
     }
 
     .audience-card.positive ul li::before {
-        content: '✓';
+        content: 'âœ“';
         position: absolute;
         left: 0;
         top: -2px;
@@ -1593,7 +1594,7 @@ body {
     }
 
     .audience-card.negative ul li::before {
-        content: '✕';
+        content: 'âœ•';
         position: absolute;
         left: 0;
         top: -1px;
@@ -1610,7 +1611,7 @@ body {
     .bonus-resources .subsection-title {
         color: var(--color-gold); /* Destaque em ouro conforme imagem */
         text-transform: uppercase;
-        letter-spacing: 5px; /* Mais espaçado e premium */
+        letter-spacing: 5px; /* Mais espaÃ§ado e premium */
         font-size: 1.4rem; /* Aumentado */
         margin-bottom: 3rem;
         font-weight: 800;
@@ -1656,7 +1657,7 @@ body {
         overflow: hidden;
     }
 
-    /* Sobreposição de iluminação extra */
+    /* SobreposiÃ§Ã£o de iluminaÃ§Ã£o extra */
     .bonus-image-wrapper::before {
         content: '';
         position: absolute;
@@ -1683,7 +1684,7 @@ body {
         transform: scale(1.03);
     }
 
-    /* Alessandro Meliso (3º Card) trazido à frente em 1.35x e deslocado para cima */
+    /* Alessandro Meliso (3Âº Card) trazido Ã  frente em 1.35x e deslocado para cima */
     .bonus-grid .bonus-card:nth-child(3) .bonus-image-wrapper img {
         transform: scale(1.35) translateY(-20%);
         /* Zoom 1.35x + Deslocamento Superior */
@@ -1716,7 +1717,7 @@ body {
         flex-grow: 1;
         display: flex;
         flex-direction: column;
-        background: #000000; /* Fundo preto sólido solicitado */
+        background: #000000; /* Fundo preto sÃ³lido solicitado */
         border-top: 1px solid rgba(250, 234, 188, 0.15);
     }
 
@@ -1741,7 +1742,7 @@ body {
         line-height: 1.6;
     }
 
-    /* Aulas com especialistas (Título Maior) */
+    /* Aulas com especialistas (TÃ­tulo Maior) */
     .specialists-section .subsection-title {
         font-size: clamp(2rem, 5vw, 3.8rem);
         /* Aumentado */
@@ -1773,7 +1774,7 @@ body {
         box-shadow: 0 0 15px rgba(255, 51, 51, 0.15);
         /* Brilho neon suave */
         position: relative;
-        /* PERFORMANCE PRO: Isola a renderização */
+        /* PERFORMANCE PRO: Isola a renderizaÃ§Ã£o */
         content-visibility: auto;
         contain-intrinsic-size: 300px 580px;
     }
@@ -1791,7 +1792,7 @@ body {
         /* Aumentado para mostrar o corpo em todos */
         object-fit: cover;
         object-position: center 15%;
-        /* Enquadramento que prioriza corpo + cabeça */
+        /* Enquadramento que prioriza corpo + cabeÃ§a */
         filter: grayscale(0%);
         transition: transform 0.6s var(--transition-smooth);
         border-bottom: 1px solid rgba(250, 234, 188, 0.2);
@@ -1801,7 +1802,7 @@ body {
         /* Imagem de fundo recuperada para contraste */
     }
 
-    /* Ajuste definitivo Mariana Maduro pelo data-name (estável com clones do Swiper) */
+    /* Ajuste definitivo Mariana Maduro pelo data-name (estÃ¡vel com clones do Swiper) */
     div[data-name="Mariana Maduro"] .speaker-img {
         object-fit: cover !important;
         transform: scale(1.15) translateY(-10%) !important;
@@ -1982,7 +1983,7 @@ body {
     .checkout-list li {
         position: relative;
         padding-left: 3rem;
-        /* Ajustado proporção */
+        /* Ajustado proporÃ§Ã£o */
         padding-bottom: 1.2rem;
         margin-bottom: 1.2rem;
         font-size: 1rem;
@@ -1998,26 +1999,26 @@ body {
 
     .checkout-list li:last-child {
         border-bottom: none;
-        /* Remove a linha do último item */
+        /* Remove a linha do Ãºltimo item */
     }
 
     .checkout-list li:hover {
         transform: translateX(8px);
-        /* Realce dinâmico nas linhas */
+        /* Realce dinÃ¢mico nas linhas */
         border-bottom-color: rgba(204, 51, 51, 0.3);
     }
 
     .checkout-list li::before {
-        content: '✓';
+        content: 'âœ“';
         position: absolute;
         left: 0;
         top: 0;
         width: 2rem;
         height: 2rem;
         background: transparent;
-        /* Sem círculo — símbolo limpo */
+        /* Sem cÃ­rculo â€” sÃ­mbolo limpo */
         color: #FAEABC;
-        /* Bege sóbrio no fundo escuro */
+        /* Bege sÃ³brio no fundo escuro */
         border-radius: 0;
         display: flex;
         align-items: center;
@@ -2034,12 +2035,12 @@ body {
     }
 
     .btn-checkout {
-        /* Estilos herdados do padrão global .btn */
+        /* Estilos herdados do padrÃ£o global .btn */
         margin-top: auto;
     }
 
     .btn-checkout:hover {
-        /* Estilos herdados do padrão global .btn:hover */
+        /* Estilos herdados do padrÃ£o global .btn:hover */
     }
 
     /* ==========================================================================
@@ -2201,7 +2202,7 @@ body {
     .mentor-bio {
         background-color: #333333; /* Tudo cinza conforme solicitado */
         padding: 3.5rem 4rem;
-        /* Mais espaço para ocupar o bloco */
+        /* Mais espaÃ§o para ocupar o bloco */
         border-radius: 32px;
         box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
         position: relative;
@@ -2258,7 +2259,7 @@ body {
     }
 
     .mentor-bio .check-list li::before {
-        content: '✓';
+        content: 'âœ“';
         position: absolute;
         left: 0;
         color: #FAEABC;
@@ -2294,13 +2295,14 @@ body {
 
     .cta-final .section-title {
         color: #8b0000;
-        /* Título em vermelho para destaque sobre bege */
+        font-size: clamp(2.4rem, 6vw, 3rem); /* Aumentado em 20% */
+        /* TÃ­tulo em vermelho para destaque sobre bege */
         margin-bottom: 1.5rem;
     }
 
     .cta-final p {
-        font-size: 1.3rem;
-        /* Aumentado em 15% para facilitar a leitura */
+        font-size: 1.1rem;
+        /* Reduzido em 15% conforme solicitado */
         color: #1a1a1a;
         max-width: 800px;
         margin: 0 auto 1.5rem;
@@ -2310,7 +2312,7 @@ body {
 
     .cta-final .btn {
         padding: 1rem 2.5rem;
-        /* Reduzido para não ficar 'exageradamente grande' */
+        /* Reduzido para nÃ£o ficar 'exageradamente grande' */
         font-size: 1.1rem;
         margin-top: 2rem;
     }
@@ -2319,9 +2321,9 @@ body {
    FAQ
    ========================================================================== */
     .faq-section {
-        background-color: #e8e8e8; /* Cinza claro limpo */
+        background-color: #201f1f; /* Cinza escuro solicitado */
         background-image: none;
-        color: #1a1a1a;
+        color: rgba(255, 255, 255, 0.9);
         position: relative;
     }
 
@@ -2331,14 +2333,14 @@ body {
     }
 
     .faq-section .section-title {
-        color: #1a1a1a;
+        color: var(--color-gold);
         margin-bottom: 3rem;
     }
 
     .faq-item {
-        background: transparent; /* Sem fundo branco — integrado ao cinza da seção */
-        border: 1px solid rgba(0, 0, 0, 0.15);
-        border-left: 4px solid #cc3333; /* Linha vermelha de destaque lateral */
+        background: transparent; /* Sem fundo branco â€” integrado ao cinza da seÃ§Ã£o */
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-left: 4px solid var(--color-bordeaux); /* Linha vermelha de destaque lateral */
         margin-bottom: 1rem;
         border-radius: var(--radius-md);
         box-shadow: none;
@@ -2353,7 +2355,7 @@ body {
         position: relative;
         outline: none;
         font-family: var(--font-heading);
-        color: #cc3333; /* Perguntas em VERMELHO */
+        color: #ffffff; /* Perguntas em BRANCO */
         font-size: 1.15rem;
         transition: all 0.3s ease;
         background: transparent;
@@ -2370,7 +2372,7 @@ body {
         transform: translateY(-50%);
         font-size: 1.5rem;
         transition: var(--transition);
-        color: #cc3333;
+        color: var(--color-gold);
     }
 
     .faq-item[open] summary .icon {
@@ -2379,15 +2381,15 @@ body {
 
     .faq-content {
         padding: 0 2rem 1.5rem;
-        color: #1a1a1a; /* Texto escuro bem legível sobre o cinza */
+        color: rgba(255, 255, 255, 0.7); /* Texto escuro bem legÃ­vel sobre o cinza */
         font-size: 1rem;
         line-height: 1.7;
-        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
         padding-top: 1rem;
     }
 
     .faq-content p {
-        color: #1a1a1a !important; /* Garante legibilidade das respostas */
+        color: rgba(255, 255, 255, 0.7) !important; /* Garante legibilidade das respostas */
         font-size: 1rem;
         line-height: 1.7;
     }
@@ -2396,20 +2398,20 @@ body {
    FOOTER
    ========================================================================== */
     .footer {
-        padding: 0.5rem 0; /* Rodapé com altura mínima solicitada */
+        padding: 0.5rem 0; /* RodapÃ© com altura mÃ­nima solicitada */
         background-color: var(--color-bordeaux) !important;
         border-top: 1px solid rgba(250, 234, 188, 0.1);
     }
 
     .logo-footer {
         height: 115px; /* Aumentado em mais 30% sobre os 88px anteriores */
-        margin: 0 auto 0.5rem; /* Margem reduzida para encurtar o rodapé */
+        margin: 0 auto 0.5rem; /* Margem reduzida para encurtar o rodapÃ© */
         filter: brightness(0) invert(1);
         opacity: 1; /* Destaque total */
     }
 
     .footer-links {
-        margin-bottom: 0.5rem; /* Margem reduzida para encurtar o rodapé */
+        margin-bottom: 0.5rem; /* Margem reduzida para encurtar o rodapÃ© */
     }
 
     .footer-links a {
@@ -2509,7 +2511,7 @@ body {
    Global Mobile Adjustments (Max-width: 768px)
    ========================================================================== */
 @media (max-width: 768px) {
-    /* Espaçamentos mais enxutos no mobile */
+    /* EspaÃ§amentos mais enxutos no mobile */
     .pt-large { padding-top: 2.4rem !important; } /* Reduzido 20% */
     .pb-large { padding-bottom: 2.4rem !important; } /* Reduzido 20% */
     .pt-middle { padding-top: 1.6rem !important; } /* Reduzido 20% */
@@ -2528,20 +2530,20 @@ body {
         padding: 0 5px;
     }
 
-    /* Otimização Global Mobile: Remover filtros pesados que crasham Safari */
+    /* OtimizaÃ§Ã£o Global Mobile: Remover filtros pesados que crasham Safari */
     * {
         backdrop-filter: none !important;
         -webkit-backdrop-filter: none !important;
     }
 
-    /* Ajuste estrutural do Checkout / Bônus */
+    /* Ajuste estrutural do Checkout / BÃ´nus */
     .checkout-card {
-        max-width: 85% !important; /* Diminui o bloco em ~15-20% para deixá-lo mais quadrado */
-        margin: 0 auto !important; /* Mantém centralizado perfeitamente */
+        max-width: 85% !important; /* Diminui o bloco em ~15-20% para deixÃ¡-lo mais quadrado */
+        margin: 0 auto !important; /* MantÃ©m centralizado perfeitamente */
     }
     
     .checkout-body {
-        padding: 2rem 1.5rem !important; /* Reduz padding lateral e vertical para proporção quadrada */
+        padding: 2rem 1.5rem !important; /* Reduz padding lateral e vertical para proporÃ§Ã£o quadrada */
     }
 
     .checkout-card-logo {
@@ -2565,14 +2567,14 @@ body {
     }
     
     .checkout-header .bonus-tag {
-        font-size: 0.75rem !important; /* Escrita maior e legível */
-        padding: 6px 30px !important; /* Encolhido nas laterais para não cortar */
-        right: -32px !important; /* Afastamento ajustado para fita não vazar */
+        font-size: 0.75rem !important; /* Escrita maior e legÃ­vel */
+        padding: 6px 30px !important; /* Encolhido nas laterais para nÃ£o cortar */
+        right: -32px !important; /* Afastamento ajustado para fita nÃ£o vazar */
         top: 15px !important;
     }
 
-    /* ── HERO — Layout empilhado mobile: foto no topo, texto abaixo (ref: lp_aulao) ── */
-    /* ── HERO — Layout 100vh com distribuição dinâmica (ref: lp_aulao) ── */
+    /* â”€â”€ HERO â€” Layout empilhado mobile: foto no topo, texto abaixo (ref: lp_aulao) â”€â”€ */
+    /* â”€â”€ HERO â€” Layout 100vh com distribuiÃ§Ã£o dinÃ¢mica (ref: lp_aulao) â”€â”€ */
     .hero {
         border-top: 2px solid var(--color-bordeaux) !important;
         height: auto !important; /* Alterado de 100dvh para auto para evitar cortes no iPhone 12 */
@@ -2583,10 +2585,10 @@ body {
         flex-direction: column !important;
         justify-content: flex-start !important; /* Alinha ao topo para permitir scroll */
         align-items: stretch !important;
-        overflow: hidden !important; /* Trava elementos decorativos para não vazarem lateralmente */
+        overflow: hidden !important; /* Trava elementos decorativos para nÃ£o vazarem lateralmente */
     }
 
-    /* Foto da Dra: ocupa o topo e se ajusta ao espaço - Simplificada para GPU */
+    /* Foto da Dra: ocupa o topo e se ajusta ao espaÃ§o - Simplificada para GPU */
     .hero-main-img {
         position: relative !important;
         display: block !important;
@@ -2597,7 +2599,7 @@ body {
         object-fit: cover !important;
         object-position: center 10% !important;
         opacity: 1 !important;
-        /* Removida máscara complexa que crashava o iOS */
+        /* Removida mÃ¡scara complexa que crashava o iOS */
         mask-image: none !important;
         -webkit-mask-image: none !important;
         order: 0;
@@ -2609,10 +2611,10 @@ body {
         display: none !important;
     }
 
-    /* Logo sobre a doutora - Corrigido para absolute para não seguir o scroll */
+    /* Logo sobre a doutora - Corrigido para absolute para nÃ£o seguir o scroll */
     .hero-logo-internal {
         position: absolute !important;
-        top: -155px !important; /* Ajustado para compensar a nova hierarquia no hero-content */
+        top: 25px !important; /* Logo fixa no topo esquerdo */
         left: 0 !important; 
         width: 110px !important;
         z-index: 100 !important;
@@ -2620,10 +2622,10 @@ body {
         filter: drop-shadow(0 4px 10px rgba(0,0,0,0.6)) !important;
     }
 
-    /* Conteúdo de texto sobe e distribui */
+    /* ConteÃºdo de texto sobe e distribui */
     .hero-grid {
         order: 1;
-        margin-top: -65px !important; /* Puxando o texto para cima para enquadrar com a foto */
+        margin-top: -20% !important; /* Move o titulo 20% para cima */
         flex-grow: 1 !important;
         display: flex !important;
         flex-direction: column !important;
@@ -2635,15 +2637,16 @@ body {
 
     .headline {
         /* Tipografia Fluida reduzida em ~15% */
-        font-size: clamp(1.55rem, 8vw, 2.1rem) !important; 
+        font-size: clamp(1.8rem, 9.3vw, 2.45rem) !important; /* Aumentado em mais 5% */ 
         line-height: 1.05 !important;
-        margin-bottom: 0.7rem !important;
-        transform: translateY(-5px) !important; 
+        margin-bottom: 1.2rem !important;
+        transform: none !important; 
     }
     
     .subheadline {
-        font-size: clamp(0.85rem, 3.5vw, 1.05rem) !important; /* Reduzido ~10% */
-        margin-bottom: 1.2rem !important;
+        font-size: clamp(1.08rem, 4.4vw, 1.32rem) !important; /* Aumentado em mais 10% */
+        margin-top: 10% !important; /* Abaixar o texto em 10% */
+        margin-bottom: 2rem !important;
         line-height: 1.35 !important;
     }
 
@@ -2677,7 +2680,7 @@ body {
         align-items: center;
     }
     
-    /* Inversão da Mentora: Texto primeiro, imagem embaixo */
+    /* InversÃ£o da Mentora: Texto primeiro, imagem embaixo */
     .mentor .flex-row {
         flex-direction: column-reverse !important;
     }
@@ -2692,7 +2695,7 @@ body {
         background: rgba(30, 30, 30, 0.95) !important; /* Fundo mais denso */
         border-radius: 20px !important;
         padding: 2.2rem 1.8rem !important;
-        border: 1.5px solid rgba(250, 234, 188, 0.4) !important; /* Linhas mais visíveis */
+        border: 1.5px solid rgba(250, 234, 188, 0.4) !important; /* Linhas mais visÃ­veis */
         box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5) !important; /* Sombra suavizada */
     }
 
@@ -2713,7 +2716,7 @@ body {
     .p-card-icon {
         width: 65px !important; /* Ligeiramente aumentado */
         height: 65px !important;
-        border: 1.5px solid var(--color-gold) !important; /* Borda dourada em volta do ícone */
+        border: 1.5px solid var(--color-gold) !important; /* Borda dourada em volta do Ã­cone */
         box-shadow: 0 0 15px rgba(250, 234, 188, 0.25) !important; /* Brilho premium */
         margin-bottom: 2rem !important;
     }
@@ -2740,7 +2743,7 @@ body {
 
     /* Ajuste de harmonia para os cards de palestrantes (Especialistas) */
     .speaker-card {
-        min-height: auto !important; /* Remove altura gigante forçada */
+        min-height: auto !important; /* Remove altura gigante forÃ§ada */
         height: auto !important;
     }
 
@@ -2758,7 +2761,7 @@ body {
     
     .speaker-info {
         padding: 1.2rem !important;
-        min-height: 220px; /* Garante base de texto consistente mas não gigante */
+        min-height: 220px; /* Garante base de texto consistente mas nÃ£o gigante */
     }
     
     .speaker-name {
@@ -2777,7 +2780,7 @@ body {
         line-height: 1.4 !important;
     }
 
-    /* Ajuste de harmonia para os cards de bônus (Encontros ao Vivo) */
+    /* Ajuste de harmonia para os cards de bÃ´nus (Encontros ao Vivo) */
     .bonus-image-wrapper {
         height: 325px !important; /* Aumentado em ~15% para aparecer melhor a imagem */
     }
@@ -2830,7 +2833,7 @@ body {
         text-align: center;
     }
 
-    /* ── MENTOR — Padrão Hero no Mobile ── */
+    /* â”€â”€ MENTOR â€” PadrÃ£o Hero no Mobile â”€â”€ */
     .mentor {
         padding-top: 0 !important;
         display: flex !important;
@@ -2886,5 +2889,41 @@ body {
     .mentor-bio p {
         font-size: 0.95rem !important; /* Reduzido 10% */
         line-height: 1.5 !important;
+    }
+}
+
+/* ==========================================================================
+   ACESSIBILIDADE (A11Y)
+   ========================================================================== */
+*:focus-visible {
+    outline: 2px solid var(--color-gold) !important;
+    outline-offset: 4px;
+    box-shadow: 0 0 10px rgba(250, 234, 188, 0.5) !important;
+}
+
+.btn:focus-visible, 
+.hero-btn:focus-visible {
+    transform: scale(1.02);
+}
+
+
+
+/* Desktop specific adjustments based on user request */
+@media (min-width: 992px) {
+    .hero-logo-internal {
+        position: absolute;
+        top: 80px;
+        left: calc(max(0px, 50vw - 600px) + 15px);
+        margin: 0 !important;
+        width: 150px;
+    }
+
+    .hero-content {
+        transform: translateX(-15%);
+    }
+
+    .hero-btn {
+        transform: scale(0.8);
+        transform-origin: left center;
     }
 }
