@@ -467,7 +467,10 @@ body {
 
     @media(min-width: 992px) {
         .hero-grid {
-            grid-template-columns: 55% 45%;
+            grid-template-columns: 60% 40%; /* Ajustado para dar mais espaÃ§o ao texto */
+        }
+        .hero-content {
+            margin-left: -15%; /* Deslocamento solicitado para a esquerda */
         }
     }
 
@@ -478,8 +481,8 @@ body {
 
     .hero-logo-internal {
         display: block;
-        width: 185px; /* Reduzido levemente para harmonia */
-        margin-bottom: 2rem;
+        width: 140px; /* Reduzido para alinhar melhor no desktop */
+        margin-bottom: 1.5rem;
         filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
     }
 
@@ -516,11 +519,11 @@ body {
     .btn-primary.large {
         background: var(--color-gold);
         border: none;
-        padding: 14px 32px;
+        padding: 11px 26px; /* Reduzido em ~20% */
         box-shadow: 0 10px 30px rgba(250, 234, 188, 0.3);
         color: var(--color-bordeaux);
         font-weight: 700;
-        font-size: 0.95rem;
+        font-size: 0.85rem; /* Reduzido em ~10% para harmonia */
     }
 
     .hero-note {
@@ -1582,7 +1585,7 @@ body {
     }
 
     .audience-card.positive ul li::before {
-        content: 'âœ“';
+        content: '\2714';
         position: absolute;
         left: 0;
         top: -2px;
@@ -1594,7 +1597,7 @@ body {
     }
 
     .audience-card.negative ul li::before {
-        content: 'âœ•';
+        content: '\2715';
         position: absolute;
         left: 0;
         top: -1px;
@@ -2009,7 +2012,7 @@ body {
     }
 
     .checkout-list li::before {
-        content: 'âœ“';
+        content: '\2714';
         position: absolute;
         left: 0;
         top: 0;
@@ -2259,7 +2262,7 @@ body {
     }
 
     .mentor-bio .check-list li::before {
-        content: 'âœ“';
+        content: '\2714';
         position: absolute;
         left: 0;
         color: #FAEABC;
@@ -2630,7 +2633,7 @@ body {
         display: flex !important;
         flex-direction: column !important;
         justify-content: center !important;
-        position: relative !important;
+        position: static !important; /* Static para que o logo absolute ache o .hero como pai */
         z-index: 5 !important;
         padding: 0 20px !important;
     }
@@ -2651,6 +2654,7 @@ body {
     }
 
     .hero-btns {
+        margin-top: 10% !important; /* Abaixar o botao em 10% */
         margin-bottom: 1rem !important;
     }
 
