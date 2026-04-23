@@ -2718,18 +2718,19 @@ div[data-name="Bia Machnick"] .speaker-img {
         position: relative !important;
         display: block !important;
         width: 100% !important;
-        height: 40vh !important;
+        height: 45vh !important;
+        /* Aumentado para melhor enquadramento */
         right: auto !important;
-        top: auto !important;
+        top: 0 !important;
         object-fit: cover !important;
         object-position: center 10% !important;
         opacity: 1 !important;
-        /* Removida mÃ¡scara complexa que crashava o iOS */
         mask-image: none !important;
         -webkit-mask-image: none !important;
         order: 0;
         flex-shrink: 0;
-        border-bottom: 2px solid var(--color-bordeaux);
+        border-bottom: none !important;
+        /* Removida a linha que cortava o texto */
     }
 
     .hero::before {
@@ -2758,15 +2759,23 @@ div[data-name="Bia Machnick"] .speaker-img {
     /* ConteÃºdo de texto sobe e distribui */
     .hero-grid {
         order: 1;
-        margin-top: 10% !important;
-        /* Abaixado em 30% para mostrar mais a imagem da Dra. */
+        margin-top: 0 !important;
+        /* Removido overlap */
         flex-grow: 1 !important;
         display: flex !important;
         flex-direction: column !important;
-        justify-content: center !important;
+        justify-content: flex-start !important;
+        /* Alinhado ao topo do container flex */
         position: relative !important;
         z-index: 5 !important;
-        padding: 0 20px !important;
+        padding: 40px 20px !important;
+        /* EspaÃ§amento extra para nÃ£o grudar na imagem */
+    }
+
+    .hero-content {
+        transform: none !important;
+        /* Garante que o bloco fique fixo, sem efeitos de movimento */
+        transition: none !important;
     }
 
     .headline {
