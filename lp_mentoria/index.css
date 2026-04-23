@@ -3044,8 +3044,8 @@ div[data-name="Bia Machnick"] .speaker-img {
 
     .mentor-bio {
         order: 1 !important;
-        margin-top: -50px !important;
-        /* Ajustado proporcionalmente */
+        margin-top: 20px !important;
+        /* Abaixado para mostrar mais a imagem da Dra. */
         margin-left: 15px !important;
         margin-right: 15px !important;
         position: relative !important;
