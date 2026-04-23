@@ -2758,8 +2758,8 @@ div[data-name="Bia Machnick"] .speaker-img {
     /* ConteÃºdo de texto sobe e distribui */
     .hero-grid {
         order: 1;
-        margin-top: -20% !important;
-        /* Move o titulo 20% para cima */
+        margin-top: 10% !important;
+        /* Abaixado em 30% para mostrar mais a imagem da Dra. */
         flex-grow: 1 !important;
         display: flex !important;
         flex-direction: column !important;
