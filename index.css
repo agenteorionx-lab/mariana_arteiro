@@ -2768,8 +2768,8 @@ div[data-name="Bia Machnick"] .speaker-img {
         /* Alinhado ao topo do container flex */
         position: relative !important;
         z-index: 5 !important;
-        padding: 40px 20px !important;
-        /* EspaÃ§amento extra para nÃ£o grudar na imagem */
+        padding: 10px 20px !important;
+        /* Reduzido para o texto começar logo abaixo da imagem */
     }
 
     .hero-content {
