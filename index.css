@@ -1977,11 +1977,16 @@ div[data-name="Bia Machnick"] .speaker-img {
 .checkout-header {
     background: linear-gradient(135deg, #cc3333, #8b0000);
     padding: 2.8rem 2rem;
-    /* Reduzido em ~30% */
     color: #FAEABC;
     text-align: center;
     border-bottom: 2px solid rgba(0, 0, 0, 0.2);
     position: relative;
+    /* Alinhamento de altura entre cards */
+    min-height: 310px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .checkout-header::after {
@@ -2566,7 +2571,7 @@ div[data-name="Bia Machnick"] .speaker-img {
 .checkout-header {
     position: relative;
     z-index: 10;
-    min-height: 210px;
+    min-height: 310px;
     display: flex;
     flex-direction: column;
     justify-content: center;
